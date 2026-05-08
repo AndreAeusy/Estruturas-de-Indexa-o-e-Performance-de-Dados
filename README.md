@@ -5,7 +5,7 @@ A indexação é um recurso utilizado em bancos de dados para acelerar buscas e 
 
 ---
 
-# Parte 1 — Conteúdo Técnico
+# Parte 1 Conteúdo Técnico
 
 # 1. Fundamentos e Estruturas
 
