@@ -55,7 +55,7 @@ A Árvore B faz exatamente isso:
 
 ## Estrutura Hash
 
-O índice Hash funciona através de uma função matemática chamada “hash”, que transforma um valor em um endereço específico.
+*O índice Hash funciona através de uma função matemática chamada “hash”, que transforma um valor em um endereço específico.
 
 ### Características:
 
