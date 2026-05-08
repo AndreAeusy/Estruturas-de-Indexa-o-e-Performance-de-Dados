@@ -358,31 +358,6 @@ O PostgreSQL é melhor para:
 
 ---
 
-# Parte 2 — Apresentação Oral
-
-# Possível Pergunta do Professor
-
-## “Por que não podemos indexar todas as colunas?”
-
-### Resposta:
-
-Porque índices possuem custo.
-
-Embora acelerem consultas, eles:
-
-* aumentam o uso de armazenamento;
-* deixam INSERT, UPDATE e DELETE mais lentos;
-* exigem manutenção constante;
-* podem piorar a performance se usados em colunas inadequadas.
-
-Por isso, é necessário analisar:
-
-* frequência das consultas;
-* cardinalidade;
-* tipo de busca realizada.
-
----
-
 # Conclusão
 
 A indexação é essencial para otimizar bancos de dados, mas deve ser aplicada estrategicamente. Estruturas como B-Tree, Hash e Índice Invertido possuem objetivos diferentes e cada cenário exige uma escolha adequada. Entender cardinalidade, custo e tipo de consulta é fundamental para garantir alta performance e eficiência no sistema.
