@@ -202,7 +202,9 @@ Exemplo:
 
 ### Resultado:
 
-O índice pode não valer a pena, Isso acontece porque poucas variações de valores reduzem a eficiência do índice, principalmente em tabelas muito grandes.
+O índice pode não valer a pena, Isso acontece porque poucas variações de valores reduzem a eficiência do índice, principalmente em 
+tabelas muito grandes.
+
 ---
 
 ## Campo Sexo
