@@ -69,6 +69,8 @@ O índice Hash funciona através de uma função matemática chamada “hash”,
   * intervalos;
   * ordenações;
   * buscas por prefixo.
+ 
+Apesar do PostgreSQL suportar índices Hash, a B-Tree ainda é o padrão mais utilizado por ser mais versátil e suportar vários tipos de consultas.
 
 ---
 
@@ -177,6 +179,7 @@ Funciona muito bem para buscas por prefixo:
 ```sql
 WHERE nome LIKE 'Ana%'
 ```
+A B-Tree funciona muito bem para buscas por prefixo à esquerda, como 'Ana%'. Porém, ela não possui boa eficiência em buscas contendo '%Ana%', porque o início da palavra é desconhecido.
 
 A árvore consegue navegar alfabeticamente.
 
@@ -199,8 +202,7 @@ Exemplo:
 
 ### Resultado:
 
-O índice pode não valer a pena, porque o banco pode preferir ler toda a tabela ao invés de usar o índice.
-
+O índice pode não valer a pena, Isso acontece porque poucas variações de valores reduzem a eficiência do índice, principalmente em tabelas muito grandes.
 ---
 
 ## Campo Sexo
@@ -216,7 +218,7 @@ Exemplo:
 
 ### Conclusão:
 
-Normalmente não é recomendado criar índice.
+Normalmente não é recomendado criar índice Em situações de baixa cardinalidade, o otimizador do banco pode ignorar o índice e realizar um Full Table Scan, pois acessar grande parte da tabela pelo índice pode ser mais custoso do que ler os dados diretamente.
 
 ### Motivo:
 
